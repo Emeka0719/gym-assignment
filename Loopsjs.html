@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> The For loop</h2>
+    <p id="show"></p>
+    <h2>The while loop</h2>
+    <p id="showWhile"></p>
+    <h2>The Do while</h2>
+    <p id="showdowhile"></p>
+    <script>
+            for(let i=0;i<5;i++) {
+                document.getElementById("show").innerHTML += i + "<br>"
+            }
+
+            let txt;
+            let k = 0;
+            while (k<10){
+                txt += k + "<br>";
+                k++;
+            }
+            document.getElementById("showWhile").innerHTML = txt;
+
+            let t = 10;
+            do{
+                document.getElementbyId("showdowhile").innerHTML += "the value of t using do while is" + t + "<br>";
+                t++;
+            }while(t<10);
+    </script>
+</body>
+</html>
